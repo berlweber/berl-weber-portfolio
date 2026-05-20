@@ -1,5 +1,8 @@
 import './Hero.css';
+import heroPhoto from '../../assets/hero.png'
 import { ArrowRight, Mail } from 'lucide-react';
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
     return (
@@ -20,7 +23,15 @@ const Hero = () => {
                     Contact Me
                     <Mail />
                 </a>
+                <div className='links-to-accounts'>
+                    <p>Let's connect:
+                        <FaGithub />
+                        <FaLinkedin />
+                    </p>
+                </div>
             </div>
+            <img src={heroPhoto} alt="photo of Berl Weber"
+             className='hero-photo'/>
         </>
     );
 };
