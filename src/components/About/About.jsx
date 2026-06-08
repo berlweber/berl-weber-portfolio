@@ -5,7 +5,7 @@ import { TbTargetArrow } from "react-icons/tb";
 const About = () => {
     return (
         <>
-            <h2>About Me</h2>
+            <h3>About Me</h3>
             <p>I’m a full-stack web developer with a strong analytical and back-end focus, 
                 drawn to complex logic, structured problem-solving, and building reliable systems. 
                 I enjoy understanding how products work as a whole, improving both the technical 
@@ -17,24 +17,24 @@ const About = () => {
                  time zones, including adapting to US working hours if needed. My experience learning and
                   building in fully remote environments strengthened my communication, self-management, 
                   and independent problem-solving skills. </p>
-            <div className='sub-about-sect'>
+            <div className='sub-about-sect-container'>
                 <div className='sub-sec'>
                     <span><Brain size={22}/></span>
-                    <h3>Analytical Problem Solver</h3>
+                    <h4>Analytical Problem Solver</h4>
                     <p>I enjoy working through complexity, debugging deeply, and understanding how systems behave 
                         beneath the surface. I’m especially drawn to back-end logic, reliability, and 
                         structured problem-solving.</p>
                 </div>
                 <div className='sub-sec'>
                     <span><TbTargetArrow size={26}/></span>
-                    <h3>Product & User Thinking</h3>
+                    <h4>Product & User Thinking</h4>
                     <p>I care about both technical correctness and user experience, keeping the bigger
                          picture in mind while refining implementation details. I aim to build products
                           that are clear, maintainable, and genuinely useful. </p>
                 </div>
                 <div className='sub-sec'>
                     <span><BookOpen size={22}/></span>
-                    <h3>Continuous Learner</h3>
+                    <h4>Continuous Learner</h4>
                     <p>I’m naturally driven to understand how things work and continuously improve 
                         my skills through self-directed learning, experimentation, and hands-on 
                         development experience.</p>
