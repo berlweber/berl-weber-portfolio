@@ -1,4 +1,4 @@
-import { SiMongoose } from 'react-icons/si';
+// import { SiMongoose } from 'react-icons/si';
 import Tag from '../Tag/Tag.jsx';
 
 const TechStack = () => {
@@ -28,8 +28,6 @@ const TechStack = () => {
             tech: ['REST APIs', 'CRUD', 'MVC', 'Responsive Design', 'Deployment']
         }
     ];
-    const backEnd = ['Node.js', 'Express', 'Python', 'Django', 'REST APIs',];
-// create here arrays for each subsection, see a list of them in gpt
 
     return (
         <>
