@@ -3,8 +3,31 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
 import { BsSend } from "react-icons/bs";
+import { useState } from 'react';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    });
+
+    const handleChange = (event) => {
+        setFormData({ ...formData, [event.target.name]: event.target.value});
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+        });
+        // write what should happen when submiting the form = send email 
+    }
+
     return (
         <section>
           <h3>Contact</h3>
@@ -32,16 +55,53 @@ const Contact = () => {
                     <a href="https://github.com/berlweber" target='_blank' rel='noreferrer'>github.com/berlweber</a>
                 </li>
             </ul>
-            <form action="mailto:a5142732357@gmail.com" method='post' encType='text/plain'>
-                 <input type="text" name='name' value="Your Name"/>
-                 <input type="email" name='email' value="Your Email"/>
-                 <input type="text" name='Subject' value="Subject"/>
-                 <textarea name="message" value="Your Message" cols={50} rows={3}></textarea>
-                 <button type='submit' className='submit-btn'>
-                    Sent Message
+            <form onSubmit={handleSubmit}> {/*action="mailto:a5142732357@gmail.com" method='post' encType='text/plain'*/}
+                <label htmlFor="name">Name</label>
+                 <input 
+                    type="text" 
+                    name='name'
+                    id='name'
+                    placeholder='Your Name'
+                    required
+                    value={formData.name} 
+                    onChange={handleChange}
+                />
+                <label htmlFor="email">Email</label>
+                 <input 
+                    type="email" 
+                    name='email'
+                    id='email'
+                    placeholder='example@myself.dev'
+                    required
+                    value={formData.email} 
+                    onChange={handleChange}
+                />
+                <label htmlFor="subject">Subject</label>
+                 <input 
+                    type="text" 
+                    name='subject' 
+                    id='subject'
+                    placeholder='Subject'
+                    required
+                    value={formData.subject} 
+                    onChange={handleChange}
+                />
+                <label htmlFor="message">Message</label>
+                 <textarea 
+                    name="message" 
+                    placeholder='Write your message here...'
+                    id='message'
+                    required
+                    value={formData.message} 
+                    cols={50} rows={3} 
+                    onChange={handleChange}
+                    ></textarea>
+                 <button 
+                 type='submit' 
+                 className='submit-btn'>
+                    Send Message
                     <BsSend size={16}/>
                  </button>
-                 {/* still need to make the form controlled */}
                  {/* still need to make the submit button working */}
             </form>   
         </section>
