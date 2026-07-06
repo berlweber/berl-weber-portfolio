@@ -29,7 +29,7 @@ const Contact = () => {
     }
 
     return (
-        <section>
+        <section id='contact'>
           <h3>Contact</h3>
             <p>
             I’m currently looking for junior full-stack or back-end focused developer

@@ -30,7 +30,7 @@ const TechStack = () => {
     ];
 
     return (
-        <>
+        <section id='skills'>
             <h3>Tech Stack</h3>
 
             {techStackData.map((stack) => (
@@ -45,7 +45,7 @@ const TechStack = () => {
                     </ul>
                 </div>
             ))}
-        </>
+        </section>
     );
 };
 

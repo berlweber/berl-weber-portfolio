@@ -41,17 +41,17 @@ const Projects = () => {
         },
     ]
     return (
-        <>
-        <h3>Projects</h3>
-        <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
-        <br />
-        {data.map((project) =>(
-        <ProjectCard 
-        key={project.name} project={project}
-        />
+        <section id='projects'>
+            <h3>Projects</h3>
+            <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
+            <br />
+            {data.map((project) =>(
+            <ProjectCard 
+            key={project.name} project={project}
+            />
 
-        ))}
-        </>
+            ))}
+        </section>
     )
 }
 
