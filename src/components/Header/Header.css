@@ -11,7 +11,7 @@ header {
     right: 0px;
     left: 0px;
     background-color: var(--bg-primary);
-    background-color: rgb(5, 8, 22, 0.7);
+    background-color: rgb(5, 8, 22, 0.8);
     border-bottom: 2px var(--border-primary) solid;
 }
 
