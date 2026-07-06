@@ -1,0 +1,18 @@
+nav {
+    height: 100%;
+    display: flex;
+}
+
+nav a {
+    padding-inline: 20px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px;
+    border-color: transparent;
+}
+
+.active {
+    color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}

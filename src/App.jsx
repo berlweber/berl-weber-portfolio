@@ -11,11 +11,13 @@ const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <About />
-      <TechStack />
-      <Projects />
-      <Contact />
+      <main id='home'>
+        <Hero />
+        <About />
+        <TechStack />
+        <Projects />
+        <Contact />
+      </main>
     </>
   );
 };

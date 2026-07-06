@@ -9,22 +9,25 @@ const Header = () => {
     return (
        
         <header>
-            <a href="#home">
-                <span>&lt;/&gt;</span>
-                <span>Berl Weber</span>
+            <a href="#home" id='logo-name-link'>
+                <span className='code-symbol'>&lt;/&gt;</span>
+                <span className='logo-name'>Berl Weber</span>
             </a>
-            <Navbar />
+            <Navbar className='navbar' />
 
-            <a href="https://github.com/berlweber" target='_blank'>
-                <FaGithub />
-            </a>
-            <a href="https://github.com/berlweber" target='_blank'>
-                <FaLinkedin />
-            </a>
-            <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
-                <Download size={18} />
-                Resume
-            </a>
+            <div className='header-actions'>
+                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer">
+                    <FaGithub size={30} className='FaGithub'/>
+                </a>
+                <a href="------------" target='_blank' rel="noreferrer">
+                {/*still need to enter the link to linkedin*/ }
+                    <FaLinkedin size={30} className='FaLinkedin'/>
+                </a>
+                <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
+                    <Download size={18} />
+                    View Resume
+                </a>
+            </div>
         </header>
     )
 }

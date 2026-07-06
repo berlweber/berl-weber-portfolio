@@ -1,0 +1,85 @@
+:root {
+  /* Backgrounds */
+  --bg-primary: #050816; /*body*/
+  --bg-secondary: #0B1120; /*maybe for contact section*/
+  --bg-card: #111827; /*project cards tech stack cards, contact form container?, strength cards*/
+  --bg-card-hover: #172033;/*as above*/
+
+  /* Borders */
+  --border-primary: #1E293B; /*normal card borders, form fields, or separators:*/
+  --border-secondary: #23304A; /* when you need a bit more contrast, such as a hovered card or an active input:*/
+
+  /* Text */
+  --text-primary: #F8FAFC; /*main text color = headings*/
+  --text-secondary: #CBD5E1;/*paragraph text:*/
+  --text-muted: #94A3B8; /*less important information: nav links, Hi I'm, back-end focus,*/
+
+  /* Accent */
+  --accent-primary: #3B82F6; /*all blue except listed below*/
+  --accent-hover: #2563EB;
+  --accent-soft: #60A5FA; /*strength cards icons, contact details icons, project-badge (featured project)*/
+
+  /* Optional teal alternative */
+  --accent-teal: #14B8A6;/*probably to be removed*/
+
+  /* Shadows */
+  --shadow-card:
+    0 4px 20px rgba(0, 0, 0, 0.35);/*Project cards, strength cards (continues learner)*/
+
+  --shadow-glow:
+    0 0 25px rgba(59, 130, 246, 0.15);/*View My Work”, tutortrack card, download cv?*/
+
+  /* Buttons */
+  --button-bg: #2563EB; /*buttons that is filled blue, maybe also resume*/
+  --button-bg-hover: #1D4ED8; /*hover on above*/
+  --button-text: #FFFFFF; /*text in above*/
+
+  /* Inputs */
+  --input-bg: #0F172A;/*form input fields*/
+  --input-border: #1E293B;
+}
+
+html {
+  scroll-padding-top: 64px;
+  scroll-behavior: smooth;
+}
+
+
+
+/* And the cards use something like: */
+
+/* .card {
+  background: rgba(17, 24, 39, 0.75);
+  border: 1px solid #1E293B;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+  radial-gradient(circle at top left,
+    rgba(59,130,246,0.15),
+    transparent 40%),
+  var(--bg-primary);
+  
+/* Typography  */
+
+  font-family:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+  color: var(--text-primary);
+} 
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <>
+        <section>
             <p className='eyebrow'>Hi I'm</p>
             <h1>Berl Weber</h1>
             <h2>Full-Stack Web Developer</h2>
@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
             <img src={heroPhoto} alt="photo of Berl Weber"
              className='hero-photo'/>
-        </>
+        </section>
     );
 };
 
