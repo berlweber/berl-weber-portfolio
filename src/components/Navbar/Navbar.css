@@ -12,7 +12,7 @@ nav a {
     border-color: transparent;
 }
 
-.active {
+.active-tab {
     color: var(--accent-primary);
     border-color: var(--accent-primary);
 }

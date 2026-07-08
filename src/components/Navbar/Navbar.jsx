@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [activeLink, setActiveLink] = useState('#home');
+
+    const handleClick = (event) => {
+        setActiveLink(event.currentTarget.getAttribute("href"));
+    }
+    
     return (
-        <nav>
-            <a href="#home" className='active'>Home</a>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+        <nav className='navbar'>
+            <a href="#home" onClick={handleClick} className={ '#home' === activeLink ? "active-tab" : undefined } >Home</a>
+            <a href="#about" onClick={handleClick} className={ '#about' === activeLink ? "active-tab" : undefined } >About Me</a>
+            <a href="#skills" onClick={handleClick} className={ '#skills' === activeLink ? "active-tab" : undefined } >Skills</a>
+            <a href="#projects" onClick={handleClick} className={ '#projects' === activeLink ? "active-tab" : undefined } >Projects</a>
+            <a href="#contact" onClick={handleClick} className={ '#contact' === activeLink ? "active-tab" : undefined } >Contact</a>
         </nav>
     );
 };

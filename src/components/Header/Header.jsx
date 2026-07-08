@@ -13,7 +13,7 @@ const Header = () => {
                 <span className='code-symbol'>&lt;/&gt;</span>
                 <span className='logo-name'>Berl Weber</span>
             </a>
-            <Navbar className='navbar' />
+            <Navbar />
 
             <div className='header-actions'>
                 <a href="https://github.com/berlweber" target='_blank' rel="noreferrer">
@@ -24,7 +24,7 @@ const Header = () => {
                     <FaLinkedin size={30} className='FaLinkedin'/>
                 </a>
                 <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
-                    <Download size={18} />
+                    <Download size={18} className='download-icon'/>
                     View Resume
                 </a>
             </div>
