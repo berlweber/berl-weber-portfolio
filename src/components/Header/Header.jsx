@@ -1,7 +1,7 @@
 import './Header.css';
 import Navbar from '../Navbar/Navbar.jsx'
 
-import { Download } from "lucide-react";
+import { Download, Menu } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -16,17 +16,20 @@ const Header = () => {
             <Navbar />
 
             <div className='header-actions'>
-                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer">
+                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='social-link'>
                     <FaGithub size={30} className='FaGithub'/>
                 </a>
-                <a href="------------" target='_blank' rel="noreferrer">
+                <a href="------------" target='_blank' rel="noreferrer" className='social-link'>
                 {/*still need to enter the link to linkedin*/ }
                     <FaLinkedin size={30} className='FaLinkedin'/>
                 </a>
                 <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
                     <Download size={18} className='download-icon'/>
-                    View Resume
+                    <span className='view'>View </span>Resume
                 </a>
+                <button className='menu-btn'>
+                    <Menu size={32}/>
+                </button>
             </div>
         </header>
     )

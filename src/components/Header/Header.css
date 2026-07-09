@@ -18,6 +18,7 @@ header {
 #logo-name-link {
     justify-self: start;
 }
+
 .code-symbol {
     color: var(--accent-primary);
     margin-right: 30px;
@@ -36,13 +37,19 @@ header {
 .header-actions {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 30px;
     justify-self: end;
 }
 
-.FaGithub, .FaLinkedin {
-    display: inline-block;
+.social-link {
+    display: flex;
+    align-items: center;
     color: var(--text-muted);
-    margin-right: 30px;
+}
+
+.FaGithub, .FaLinkedin {
+    /* display: inline-block; */
 }
 
 .resume-btn {
@@ -53,4 +60,84 @@ header {
     border: solid 1px var(--accent-primary);
     color: var(--accent-primary);
     border-radius: 5px;
+    white-space: nowrap;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    margin-left: 10px;
+    padding: 0;
+    background: transparent;
+    color: var(--text-muted);
+    height: 40px;
+    width: 40px;
+}
+
+@media (max-width: 1175px) {
+    header {
+        padding-inline: 1rem;
+    }
+
+    .code-symbol {
+        margin-right: 15px;
+    }
+
+    .header-actions {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 990px) {
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .social-link {
+        display: none;
+    }
+    
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        padding-inline: 0.5rem;
+    }
+
+    .code-symbol {
+        color: var(--accent-primary);
+        margin-right: 10px;
+        font-size: 1.3rem;
+    }
+
+    .logo-name {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .header-actions {
+        gap: 5px;
+    }
+
+    .resume-btn {
+        padding: 7px;
+        gap: 7px;
+    }
+
+    .view {
+        display: none;
+    }
+
+    .menu-btn {
+        margin: 0px;
+    }
 }
