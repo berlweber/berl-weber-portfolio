@@ -37,7 +37,6 @@ header {
 .header-actions {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 30px;
     justify-self: end;
 }
@@ -46,10 +45,6 @@ header {
     display: flex;
     align-items: center;
     color: var(--text-muted);
-}
-
-.FaGithub, .FaLinkedin {
-    /* display: inline-block; */
 }
 
 .resume-btn {

@@ -17,11 +17,11 @@ const Header = () => {
 
             <div className='header-actions'>
                 <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='social-link'>
-                    <FaGithub size={30} className='FaGithub'/>
+                    <FaGithub size={30} />
                 </a>
                 <a href="------------" target='_blank' rel="noreferrer" className='social-link'>
                 {/*still need to enter the link to linkedin*/ }
-                    <FaLinkedin size={30} className='FaLinkedin'/>
+                    <FaLinkedin size={30} />
                 </a>
                 <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
                     <Download size={18} className='download-icon'/>
