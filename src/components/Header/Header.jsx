@@ -4,8 +4,15 @@ import Navbar from '../Navbar/Navbar.jsx'
 import { Download, Menu } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { useState } from 'react';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleClick = (event) => {
+        setMenuOpen(!menuOpen);
+    }
+
     return (
        
         <header>
@@ -13,7 +20,7 @@ const Header = () => {
                 <span className='code-symbol'>&lt;/&gt;</span>
                 <span className='logo-name'>Berl Weber</span>
             </a>
-            <Navbar />
+            <Navbar menuOpen={menuOpen} />
 
             <div className='header-actions'>
                 <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='social-link'>
@@ -27,7 +34,7 @@ const Header = () => {
                     <Download size={18} className='download-icon'/>
                     <span className='view'>View </span>Resume
                 </a>
-                <button className='menu-btn'>
+                <button className='menu-btn' onClick={handleClick}>
                     <Menu size={32}/>
                 </button>
             </div>
