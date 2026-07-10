@@ -30,9 +30,7 @@ header {
     font-weight: 500;
 }
 
-.navbar {
-    justify-self: center;
-} /*need to be moved to navbar.css */
+ /*need to be moved to navbar.css */
 
 .header-actions {
     display: flex;
@@ -86,22 +84,6 @@ header {
 @media (max-width: 990px) {
     header {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .navbar {
-        display: none;
-    }
-
-    .open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        bottom: -68px;
-        width: 100vw;
-    }
-
-    .closed {
-        display: none;
     }
 
     .social-link {

@@ -1,9 +1,10 @@
-nav {
+.navbar {
     height: 100%;
     display: flex;
+    justify-self: center;
 }
 
-nav a {
+.navbar a {
     padding-inline: 20px;
     color: var(--text-muted);
     display: flex;
@@ -19,7 +20,25 @@ nav a {
 
 @media (max-width: 1175px) {
     
-    nav a {
+    .navbar a {
         padding-inline: 10px;
+    }
+}
+
+@media (max-width: 990px) {
+    .navbar {
+        display: none;
+    }
+
+    .open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -68px;
+        width: 100vw;
+    }
+
+    .closed {
+        display: none;
     }
 }
