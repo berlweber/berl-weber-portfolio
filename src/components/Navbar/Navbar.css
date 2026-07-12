@@ -32,10 +32,22 @@
 
     .navbar.open {
         display: flex;
+        background-color: inherit;
         flex-direction: column;
-        position: absolute;
-        bottom: -68px;
-        width: 100vw;
+        position: fixed;
+        height: auto;
+        width: auto;
+        top: 68px;
+        left: 0px;
+        right: 0px;
+        justify-self: stretch;
+        border-bottom: 3px var(--border-primary) solid;
+        box-shadow: 3px 12px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar.open a {
+        height: 50px;
+        padding-left: 15px;
     }
 
     .navbar.closed {
