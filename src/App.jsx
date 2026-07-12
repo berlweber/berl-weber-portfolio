@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main id='home'>
+      <main>
         <Hero />
         <About />
         <TechStack />

@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
     return (
-        <section>
+        <section  id='home'>
             <p className='eyebrow'>Hi I'm</p>
             <h1>Berl Weber</h1>
             <h2>Full-Stack Web Developer</h2>
