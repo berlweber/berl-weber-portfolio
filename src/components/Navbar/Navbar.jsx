@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import './Navbar.css';
 
-const Navbar = ({ menuOpen }) => {
+const Navbar = ({ menuOpen, closeMenu }) => {
     const [activeLink, setActiveLink] = useState('#home');
 
     const handleClick = (event) => {
         setActiveLink(event.currentTarget.getAttribute("href"));
+        closeMenu();
     }
     
     return (

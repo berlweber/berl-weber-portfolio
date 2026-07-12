@@ -9,7 +9,7 @@ import { useState } from 'react';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleClick = (event) => {
+    const handleClick = () => {
         setMenuOpen(!menuOpen);
     }
 
@@ -20,7 +20,7 @@ const Header = () => {
                 <span className='code-symbol'>&lt;/&gt;</span>
                 <span className='logo-name'>Berl Weber</span>
             </a>
-            <Navbar menuOpen={menuOpen} />
+            <Navbar menuOpen={menuOpen} closeMenu={handleClick} />
 
             <div className='header-actions'>
                 <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='social-link'>
@@ -34,7 +34,7 @@ const Header = () => {
                     <Download size={18} className='download-icon'/>
                     <span className='view'>View </span>Resume
                 </a>
-                <button className='menu-btn' onClick={handleClick}>
+                <button className='menu-btn' onClick={handleClick} aria-expanded={ menuOpen ? true : false }>
                     <Menu size={32}/>
                 </button>
             </div>
