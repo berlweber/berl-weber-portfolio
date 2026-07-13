@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
 const Navbar = ({ menuOpen, closeMenu }) => {
@@ -7,7 +7,41 @@ const Navbar = ({ menuOpen, closeMenu }) => {
     const handleClick = (event) => {
         setActiveLink(event.currentTarget.getAttribute("href"));
         closeMenu();
-    }
+    };
+
+    useEffect(() => {
+        const sectionsIDs = ['#home', '#about', '#skills','#projects', '#contact'];
+        const sections = [];
+        sectionsIDs.forEach((id) => {
+            sections.push(document.querySelector(id));
+        });
+
+        const viewportHeight = window.innerHeight;
+        const bandHeight = viewportHeight / 10;
+        const bandTop = (viewportHeight / 3) - (bandHeight / 2);
+        const bandBottom = viewportHeight - bandTop - bandHeight;
+
+        const observerOptions = {
+            rootMargin: `-${bandTop.toFixed()}px 0px -${bandBottom.toFixed()}px 0px`
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveLink('#' + (entry.target.id));
+                };
+            });
+        }, observerOptions);
+
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+        
+        return () => {
+            observer.disconnect();
+        };
+
+    }, []);
     
     return (
         <nav className={ "navbar " + (menuOpen ? 'open' : 'closed') } >
