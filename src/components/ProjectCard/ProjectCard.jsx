@@ -1,4 +1,3 @@
-import tryout from '../../assets/react.svg';
 import Tag from '../Tag/Tag.jsx';
 import { FaGithub } from "react-icons/fa6";
 import { ExternalLink } from 'lucide-react';

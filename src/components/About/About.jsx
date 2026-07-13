@@ -1,5 +1,5 @@
 import './About.css';
-import { Brain, BookOpen, Target } from 'lucide-react';
+import { Brain, BookOpen } from 'lucide-react';
 import { TbTargetArrow } from "react-icons/tb";
 
 const About = () => {
