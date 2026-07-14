@@ -1,3 +1,4 @@
+import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import { ExternalLink } from 'lucide-react';
 import tryout from '../../assets/react.svg';
@@ -41,7 +42,7 @@ const Projects = () => {
         },
     ]
     return (
-        <section id='projects'>
+        <section id='projects' className='projects'>
             <h3>Projects</h3>
             <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
             <br />

@@ -4,7 +4,7 @@ import { TbTargetArrow } from "react-icons/tb";
 
 const About = () => {
     return (
-        <section id='about'>
+        <section id='about' className='about-me'>
             <h3>About Me</h3>
             <p>I’m a full-stack web developer with a strong analytical and back-end focus, 
                 drawn to complex logic, structured problem-solving, and building reliable systems. 

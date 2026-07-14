@@ -1,3 +1,4 @@
+import './Contact.css';
 import { Mail } from 'lucide-react';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -29,7 +30,7 @@ const Contact = () => {
     }
 
     return (
-        <section id='contact'>
+        <section id='contact' className='contact'>
           <h3>Contact</h3>
             <p>
             I’m currently looking for junior full-stack or back-end focused developer

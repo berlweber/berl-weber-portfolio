@@ -5,3 +5,11 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto; */
 }
+
+.main {
+    margin-top: 64px;
+    margin-inline: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+}

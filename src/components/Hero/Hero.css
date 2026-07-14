@@ -1,3 +1,16 @@
-#home {
-    margin-top: 64px;
+.hero {
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+}
+
+.hero-content {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.hero-photo {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    object-fit: cover;
 }

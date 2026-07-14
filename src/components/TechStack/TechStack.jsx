@@ -1,4 +1,4 @@
-// import { SiMongoose } from 'react-icons/si';
+import './TechStack.css'
 import Tag from '../Tag/Tag.jsx';
 
 const TechStack = () => {
@@ -30,7 +30,7 @@ const TechStack = () => {
     ];
 
     return (
-        <section id='skills'>
+        <section id='skills' className='tech-stack'>
             <h3>Tech Stack</h3>
 
             {techStackData.map((stack) => (
