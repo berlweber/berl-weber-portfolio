@@ -11,25 +11,28 @@ const Hero = () => {
                 <p className='eyebrow'>Hi I'm</p>
                 <h1>Berl Weber</h1>
                 <h2>Full-Stack Web Developer</h2>
-                <h3 className='accent'>with a Back-End Focus and Product Mindset</h3>
-                <p>I’m particularly drawn to complex logic, debugging, and analytical problem-solving, and
-                    I aim to build clear, reliable systems with attention not only to technical correctness, 
-                    but also to usability, maintainability, and the overall user experience.</p>
-                <div className='call-to-action'>
-                    <a href="#projects">
+                <h3 className='accent-phrase'>Back-End Focus and Product Mindset</h3>
+                <p>I’m particularly drawn to complex logic, debugging, and analytical problem-solving.</p>
+                <p>I aim to build clear, reliable systems with attention not only to technical correctness, 
+                    but also to usability, and smooth user experience.</p>
+                <div className='cta'>
+                    <a href="#projects" className='view-work btn'>
                         View My Work
-                        <ArrowRight />
+                        <ArrowRight size={18}/>
                     </a>
-                    <a href="#contact">
+                    <a href="#contact" className='contact-me btn'>
                         Contact Me
-                        <Mail />
+                        <Mail size={18}/>
                     </a>
-                    <div className='links-to-accounts'>
-                        <p>Let's connect:
-                            <FaGithub />
-                            <FaLinkedin />
-                        </p>
-                    </div>
+                </div>
+                <div className='hero-social'>
+                    <p>Let's connect:</p>
+                        <a href="https://github.com/berlweber" target='_blank' rel="noreferrer">
+                            <FaGithub size={26} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel="noreferrer">
+                            <FaLinkedin size={26} />
+                        </a>
                 </div>
             </div>
             <img src={heroPhoto} alt="photo of Berl Weber"

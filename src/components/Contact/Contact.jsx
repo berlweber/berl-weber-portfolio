@@ -47,10 +47,10 @@ const Contact = () => {
                     <FiPhone size={20} />
                     <a href="tel:+32488305152">+32488 30 51 52</a>
                 </li>
-                {/* <li>
+                <li>
                     <FaLinkedin size={20} />
-                    <a href="linkedin.com/in/berl-weber-341165408/" target='_blank' rel='noreferrer'>linkedin.com/in/berl weber</a>
-                </li> */}
+                    <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel='noreferrer'>linkedin.com/in/berl weber</a>
+                </li>
                 <li>
                     <FaGithub size={20} />
                     <a href="https://github.com/berlweber" target='_blank' rel='noreferrer'>github.com/berlweber</a>

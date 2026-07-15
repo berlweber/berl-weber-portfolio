@@ -23,10 +23,10 @@ const Header = () => {
             <Navbar menuOpen={menuOpen} closeMenu={handleClick} />
 
             <div className='header-actions'>
-                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='social-link'>
+                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='header-social-link'>
                     <FaGithub size={30} />
                 </a>
-                <a href="------------" target='_blank' rel="noreferrer" className='social-link'>
+                <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel="noreferrer" className='header-social-link'>
                 {/*still need to enter the link to linkedin*/ }
                     <FaLinkedin size={30} />
                 </a>
