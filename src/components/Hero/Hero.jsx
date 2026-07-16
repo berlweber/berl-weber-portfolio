@@ -27,11 +27,19 @@ const Hero = () => {
                 </div>
                 <div className='hero-social'>
                     <p>Let's connect:</p>
-                        <a href="https://github.com/berlweber" target='_blank' rel="noreferrer">
-                            <FaGithub size={26} />
+                        <a href="https://github.com/berlweber" 
+                        target='_blank' 
+                        rel="noreferrer"
+                        aria-label="GitHub profile"
+                        >
+                            <FaGithub size={26} aria-hidden="true"  />
                         </a>
-                        <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel="noreferrer">
-                            <FaLinkedin size={26} />
+                        <a href="https://www.linkedin.com/in/berl-weber-341165408/" 
+                        target='_blank' 
+                        rel="noreferrer"
+                        aria-label="LinkedIn profile"
+                        >
+                            <FaLinkedin size={26} aria-hidden="true" />
                         </a>
                 </div>
             </div>

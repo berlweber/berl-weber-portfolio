@@ -23,18 +23,30 @@ const Header = () => {
             <Navbar menuOpen={menuOpen} closeMenu={handleClick} />
 
             <div className='header-actions'>
-                <a href="https://github.com/berlweber" target='_blank' rel="noreferrer" className='header-social-link'>
-                    <FaGithub size={30} />
+                <a href="https://github.com/berlweber" 
+                target='_blank' 
+                rel="noreferrer" 
+                className='header-social-link'
+                aria-label="GitHub profile"
+                >
+                    <FaGithub size={30} aria-hidden="true" />
                 </a>
-                <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel="noreferrer" className='header-social-link'>
-                {/*still need to enter the link to linkedin*/ }
-                    <FaLinkedin size={30} />
+                <a href="https://www.linkedin.com/in/berl-weber-341165408/"
+                target='_blank'
+                rel="noreferrer"
+                className='header-social-link'
+                aria-label="LinkedIn profile"
+                >
+                    <FaLinkedin size={30} aria-hidden="true" />
                 </a>
                 <a href="/resume-Berl Weber-full-stack-developer.pdf" download className='resume-btn'>
                     <Download size={18} className='download-icon'/>
                     <span className='view'>View </span>Resume
                 </a>
-                <button className='menu-btn' onClick={handleClick} aria-expanded={ menuOpen ? true : false }>
+                <button className='menu-btn' onClick={handleClick} 
+                aria-expanded={ menuOpen ? true : false } 
+                aria-label="Toggle navigation menu"
+                >
                     <Menu size={32}/>
                 </button>
             </div>
