@@ -1,5 +1,5 @@
 import './Hero.css';
-import heroPhoto from '../../assets/hero.png'
+import heroPhoto from '../../assets/hero.png';
 import { ArrowRight, Mail } from 'lucide-react';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -35,7 +35,7 @@ const Hero = () => {
                         </a>
                 </div>
             </div>
-            <img src={heroPhoto} alt="photo of Berl Weber"
+            <img src={heroPhoto} alt="Portrait of Berl Weber"
              className='hero-photo'/>
         </section>
     );

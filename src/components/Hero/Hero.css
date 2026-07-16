@@ -1,20 +1,14 @@
 .hero {
     grid-area: 1 / 1 / 2 / 3;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 45% 50%;
     justify-content: space-between;
-    column-gap: 40px;
+    column-gap: 20px;
     padding-block: 2rem;
 }
 
 .hero-content {
     grid-area: 1 / 1 / 2 / 2;
-}
-
-.hero-photo {
-    grid-area: 1 / 2 / 2 / 3;
-    width: 100%;
-    object-fit: cover;
 }
 
 .eyebrow {
@@ -53,8 +47,6 @@
     max-width: 45ch;
 }
 
-
-
 .cta .btn{
     padding: 10px 18px;
     display: inline-flex;
@@ -89,4 +81,10 @@
     color: var(--text-muted);
 }
 
-
+.hero-photo {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
