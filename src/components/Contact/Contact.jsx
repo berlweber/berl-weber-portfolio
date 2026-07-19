@@ -49,7 +49,7 @@ const Contact = () => {
                 </li>
                 <li>
                     <FaLinkedin size={20} />
-                    <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel='noreferrer'>linkedin.com/in/berl weber</a>
+                    <a href="https://www.linkedin.com/in/berl-weber-341165408/" target='_blank' rel='noreferrer'>linkedin.com/in/berl-weber</a>
                 </li>
                 <li>
                     <FaGithub size={20} />

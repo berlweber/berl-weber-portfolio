@@ -52,6 +52,8 @@ const Projects = () => {
             />
 
             ))}
+            {/* still need to add hebrew interface and sign in - see cluade chat - reducing repetition in about me section  */}
+            {/* need to add to the tutorTrack card an explanation of all or part of the user experience / product decisions I made */}
         </section>
     )
 }

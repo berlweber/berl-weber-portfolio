@@ -6,14 +6,13 @@ const About = () => {
     return (
         <section id='about' className='about-me'>
             <h3>About Me</h3>
-            <p>I’m a full-stack web developer with a strong analytical and back-end focus, 
-                drawn to complex logic, structured problem-solving, and building reliable systems. 
-                I enjoy understanding how products work as a whole, improving both the technical 
-                foundation and the user experience to help solve real problems effectively.</p>
-            <p>I completed a remote Software Engineering Bootcamp at General Assembly after a year of
-                 independent self-study in JavaScript and HTML/CSS, strengthening both my technical
-                  foundation and my ability to learn new systems quickly.</p>
-            <p>Based in Antwerp, Belgium, I work remotely and am comfortable collaborating across
+            <p>My flagship project, TutorTrack, is a tutoring management platform I built during my bootcamp and
+                 continued developing for several weeks afterward. It's now in daily production use by a school 
+                 for managing its tutoring program.</p>
+            <p>I completed a remote Software Engineering Bootcamp at General Assembly after a year of independent 
+                self-study in JavaScript and HTML/CSS, strengthening both my technical foundation and my ability 
+                to learn new systems quickly.</p>
+            <p>Based in Antwerp, Belgium, I’m seeking remote opportunities and am comfortable collaborating across
                  time zones, including adapting to US working hours if needed. My experience learning and
                   building in fully remote environments strengthened my communication, self-management, 
                   and independent problem-solving skills. </p>
@@ -21,23 +20,27 @@ const About = () => {
                 <div className='sub-sec'>
                     <span><Brain size={22}/></span>
                     <h4>Analytical Problem Solver</h4>
-                    <p>I enjoy working through complexity, debugging deeply, and understanding how systems behave 
-                        beneath the surface. I’m especially drawn to back-end logic, reliability, and 
-                        structured problem-solving.</p>
+                    <p>I enjoy working through complexity and tracing bugs to their root cause 
+                        rather than patching symptoms. When implementing complex business rules
+                         and workflows, I break the problem down and test the logic as I go to 
+                         make sure the code matches the intended behavior.</p>
                 </div>
                 <div className='sub-sec'>
                     <span><TbTargetArrow size={26}/></span>
                     <h4>Product & User Thinking</h4>
-                    <p>I care about both technical correctness and user experience, keeping the bigger
-                         picture in mind while refining implementation details. I aim to build products
-                          that are clear, maintainable, and genuinely useful. </p>
+                    <p>I think beyond whether the code works to whether the product serves its purpose for 
+                        the people using it. In TutorTrack, I made valuable comments optional so the
+                         extra effort wouldn’t discourage session logging, while requiring deliberate
+                          date entry to reduce inaccurate records.</p>
+                          {/* will add a link something like "See the thinking behind TutorTrack →" */}
                 </div>
                 <div className='sub-sec'>
                     <span><BookOpen size={22}/></span>
                     <h4>Continuous Learner</h4>
-                    <p>I’m naturally driven to understand how things work and continuously improve 
-                        my skills through self-directed learning, experimentation, and hands-on 
-                        development experience.</p>
+                    <p>I’m naturally curious and genuinely enjoy learning, professionally and 
+                        personally. I see my current stack as a foundation, not a limit, and 
+                        bring that drive to learning a team’s technologies, adapting to its ways 
+                        of working, and expanding what I can contribute.</p>
                 </div>
             </div>
         </section>
