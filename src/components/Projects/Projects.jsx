@@ -43,7 +43,7 @@ const Projects = () => {
     ]
     return (
         <section id='projects' className='projects'>
-            <h3>Projects</h3>
+            <h2>Projects</h2>
             <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
             <br />
             {data.map((project) =>(

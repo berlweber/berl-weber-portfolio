@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
                 <span className='project-badge'>Group Project</span>
             )}
             <img src={project.screenshot} alt="screenshot of deployed project" />
-            <h4>{project.name}</h4>
+            <h3>{project.name}</h3>
             <p className='project-description'>{project.description}</p>
             <ul className='project-tech-stack'>
                 {project.tech.map((tech) => (

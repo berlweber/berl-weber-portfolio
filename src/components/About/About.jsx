@@ -5,7 +5,7 @@ import { TbTargetArrow } from "react-icons/tb";
 const About = () => {
     return (
         <section id='about' className='about-me'>
-            <h3>About Me</h3>
+            <h2>About Me</h2>
             <p>My flagship project, TutorTrack, is a tutoring management platform I built during my bootcamp and
                  continued developing for several weeks afterward. It's now in daily production use by a school 
                  for managing its tutoring program.</p>
@@ -19,7 +19,7 @@ const About = () => {
             <div className='sub-about-sect-container'>
                 <div className='sub-sec'>
                     <span><Brain size={22}/></span>
-                    <h4>Analytical Problem Solver</h4>
+                    <h3>Analytical Problem Solver</h3>
                     <p>I enjoy working through complexity and tracing bugs to their root cause 
                         rather than patching symptoms. When implementing complex business rules
                          and workflows, I break the problem down and test the logic as I go to 
@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <div className='sub-sec'>
                     <span><TbTargetArrow size={26}/></span>
-                    <h4>Product & User Thinking</h4>
+                    <h3>Product & User Thinking</h3>
                     <p>I think beyond whether the code works to whether the product serves its purpose for 
                         the people using it. In TutorTrack, I made valuable comments optional so the
                          extra effort wouldn’t discourage session logging, while requiring deliberate
@@ -36,7 +36,7 @@ const About = () => {
                 </div>
                 <div className='sub-sec'>
                     <span><BookOpen size={22}/></span>
-                    <h4>Continuous Learner</h4>
+                    <h3>Continuous Learner</h3>
                     <p>I’m naturally curious and genuinely enjoy learning, professionally and 
                         personally. I see my current stack as a foundation, not a limit, and 
                         bring that drive to learning a team’s technologies, adapting to its ways 

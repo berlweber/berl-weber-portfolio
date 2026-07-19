@@ -10,8 +10,8 @@ const Hero = () => {
             <div className='hero-content'>
                 <p className='eyebrow'>Hi I'm</p>
                 <h1>Berl Weber</h1>
-                <h2>Full-Stack Web Developer</h2>
-                <h3 className='accent-phrase'>Back-End Focus and Product Mindset</h3>
+                <p className='sub-title'>Full-Stack Web Developer</p>
+                <p className='accent-phrase'>Back-End Focus and Product Mindset</p>
                 <p>I’m particularly drawn to complex logic, debugging, and analytical problem-solving.</p>
                 <p>I aim to build clear, reliable systems with attention not only to technical correctness, 
                     but also to usability, and smooth user experience.</p>

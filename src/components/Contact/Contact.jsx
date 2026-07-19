@@ -31,7 +31,7 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contact'>
-          <h3>Contact</h3>
+          <h2>Contact</h2>
             <p>
             I’m currently looking for junior full-stack or back-end focused developer
             opportunities, remote or local. I’m interested in building reliable,

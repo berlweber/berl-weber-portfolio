@@ -31,12 +31,12 @@ const TechStack = () => {
 
     return (
         <section id='skills' className='tech-stack'>
-            <h3>Tech Stack</h3>
+            <h2>Tech Stack</h2>
 
             {techStackData.map((stack) => (
                 <div key={stack.title}>
 
-                    <h4>{stack.title}</h4>
+                    <h3>{stack.title}</h3>
 
                     <ul>
                         {stack.tech.map((tech) => (
