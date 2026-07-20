@@ -13,8 +13,10 @@ const App = () => {
       <Header />
       <main className='main'>
         <Hero />
-        <About />
-        <TechStack />
+        <div className='about-skills-layout'> 
+          <About />
+          <TechStack />
+        </div>
         <Projects />
         <Contact />
       </main>
