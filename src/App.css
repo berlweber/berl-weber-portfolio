@@ -16,6 +16,8 @@
 .about-skills-layout {
     display: grid;
     grid-template-columns: 70% 30%;
+    padding-top: 2rem;
+    border-top: solid var(--border-primary) 2px;
 }
 
 @media (max-width: 430px) {
