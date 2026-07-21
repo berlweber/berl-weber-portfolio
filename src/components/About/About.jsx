@@ -9,16 +9,16 @@ const About = () => {
             <p>My flagship project, TutorTrack, is a tutoring management platform I built during my bootcamp and
                  continued developing for several weeks afterward. It's now in daily production use by a school 
                  for managing its tutoring program.</p>
-            <p>I completed a remote Software Engineering Bootcamp at General Assembly after a year of independent 
-                self-study in JavaScript and HTML/CSS, strengthening both my technical foundation and my ability 
-                to learn new systems quickly.</p>
+            <p>After a year of independent study in JavaScript and HTML/CSS, I completed General Assembly’s remote 
+                Software Engineering Bootcamp, expanding into full-stack development with React, Node/Express, 
+                Python/Django, PostgreSQL, and MongoDB.</p>
             <p>Based in Antwerp, Belgium, I’m seeking remote opportunities and am comfortable collaborating across
                  time zones, including adapting to US working hours if needed. My experience learning and
                   building in fully remote environments strengthened my communication, self-management, 
                   and independent problem-solving skills. </p>
-            <div className='sub-about-sect-container'>
+            <div className='about-sect-sub-containers'>
                 <div className='sub-sec'>
-                    <span><Brain size={22}/></span>
+                    <span className='strength-card-symbol'><Brain size={40}/></span>
                     <h3>Analytical Problem Solver</h3>
                     <p>I enjoy working through complexity and tracing bugs to their root cause 
                         rather than patching symptoms. When implementing complex business rules
@@ -26,7 +26,7 @@ const About = () => {
                          make sure the code matches the intended behavior.</p>
                 </div>
                 <div className='sub-sec'>
-                    <span><TbTargetArrow size={26}/></span>
+                    <span className='strength-card-symbol'><TbTargetArrow size={40}/></span>
                     <h3>Product & User Thinking</h3>
                     <p>I think beyond whether the code works to whether the product serves its purpose for 
                         the people using it. In TutorTrack, I made valuable comments optional so the
@@ -35,7 +35,7 @@ const About = () => {
                           {/* will add a link something like "See the thinking behind TutorTrack →" */}
                 </div>
                 <div className='sub-sec'>
-                    <span><BookOpen size={22}/></span>
+                    <span className='strength-card-symbol'><BookOpen size={40}/></span>
                     <h3>Continuous Learner</h3>
                     <p>I’m naturally curious and genuinely enjoy learning, professionally and 
                         personally. I see my current stack as a foundation, not a limit, and 

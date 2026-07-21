@@ -1,3 +1,42 @@
 .about-me {
     grid-column: 1 / 2;
+    padding-right: 25px;
+    border-right: solid var(--border-primary);
+}
+
+.about-me p {
+    max-width: 75ch;
+}
+
+.about-sect-sub-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    padding: 25px 0px 25px 25px;
+}
+
+.sub-sec {  
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: auto auto;
+    align-content: start;
+    gap: 10px;
+}
+
+.strength-card-symbol {
+    grid-area: 1 / 1 / 2 / 2;
+    color: var(--accent-soft);
+}
+
+.sub-sec h3 {
+    margin: 0;
+    padding: 0;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.sub-sec p {
+    grid-area: 2 / 1 / 3 / 3;
+    padding-right: 15px;
 }
