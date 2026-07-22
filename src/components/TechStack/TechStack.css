@@ -1,3 +1,7 @@
+.tech-stack {
+    padding-top: 1rem;
+}
+
 .tech-sub-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -31,4 +35,38 @@
     border: var(--border-primary) solid 2px;
     background-color: var(--bg-card);
     color: var(--text-secondary);
+}
+
+@media (max-width: 990px) {
+    .tech-sub-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-sub:nth-child(3n) ul {
+        border-right: none;
+    }
+}
+
+@media (max-width: 525px) {
+    .tech-sub-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-stack .tech-sub ul{
+        border-right: solid var(--border-primary) 2px;
+    }
+
+    .tech-sub:nth-child(2n) ul {
+        border-right: none;
+    }
+}
+
+@media (max-width: 355px) {
+    .tech-sub-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-stack .tech-sub ul{
+        border-right: none;
+    }
 }
