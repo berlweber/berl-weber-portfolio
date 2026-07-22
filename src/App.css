@@ -10,14 +10,7 @@
 
 .main {
     margin-top: 64px;
-    /* margin-inline: 2rem; */
-}
-
-.about-skills-layout {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    padding-top: 2rem;
-    border-top: solid var(--border-primary) 2px;
+    margin-inline: 2rem;
 }
 
 @media (max-width: 430px) {

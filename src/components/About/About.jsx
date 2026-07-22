@@ -5,17 +5,19 @@ import { TbTargetArrow } from "react-icons/tb";
 const About = () => {
     return (
         <section id='about' className='about-me'>
-            <h2>About Me</h2>
-            <p>My flagship project, TutorTrack, is a tutoring management platform I built during my bootcamp and
-                 continued developing for several weeks afterward. It's now in daily production use by a school 
-                 for managing its tutoring program.</p>
-            <p>After a year of independent study in JavaScript and HTML/CSS, I completed General Assembly’s remote 
-                Software Engineering Bootcamp, expanding into full-stack development with React, Node/Express, 
-                Python/Django, PostgreSQL, and MongoDB.</p>
-            <p>Based in Antwerp, Belgium, I’m seeking remote opportunities and am comfortable collaborating across
-                 time zones, including adapting to US working hours if needed. My experience learning and
-                  building in fully remote environments strengthened my communication, self-management, 
-                  and independent problem-solving skills. </p>
+            <div className='about-main'>
+                <h2>About Me</h2>
+                <p>My flagship project, TutorTrack, is a tutoring management platform I built during my bootcamp and
+                    continued developing for several weeks afterward. It's now in daily production use by a school 
+                    for managing its tutoring program.</p>
+                <p>After a year of independent study in JavaScript and HTML/CSS, I completed General Assembly’s remote 
+                    Software Engineering Bootcamp, expanding into full-stack development with React, Node/Express, 
+                    Python/Django, PostgreSQL, and MongoDB.</p>
+                <p>Based in Antwerp, Belgium, I’m seeking remote opportunities and am comfortable collaborating across
+                    time zones, including adapting to US working hours if needed. My experience learning and
+                    building in fully remote environments strengthened my communication, self-management, 
+                    and independent problem-solving skills. </p>
+            </div>
             <div className='about-sect-sub-containers'>
                 <div className='sub-sec'>
                     <span className='strength-card-symbol'><Brain size={40}/></span>

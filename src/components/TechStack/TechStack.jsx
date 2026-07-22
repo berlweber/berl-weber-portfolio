@@ -12,7 +12,7 @@ const TechStack = () => {
             tech: ['Node.js', 'Express.js', 'Python', 'Django',]
         },
         {
-            title: 'Databses',
+            title: 'Databases',
             tech: ['PostgreSQL', 'MongoDB', 'Mongoose', 'Django ORM']
         },
         {
@@ -32,19 +32,20 @@ const TechStack = () => {
     return (
         <section id='skills' className='tech-stack'>
             <h2>Tech Stack</h2>
+            <div className='tech-sub-container'>
+                {techStackData.map((stack) => (
+                    <div key={stack.title} className='tech-sub'>
 
-            {techStackData.map((stack) => (
-                <div key={stack.title}>
+                        <h3>{stack.title}</h3>
 
-                    <h3>{stack.title}</h3>
-
-                    <ul>
-                        {stack.tech.map((tech) => (
-                            <Tag key={tech} tech={tech} />
-                        ))}
-                    </ul>
-                </div>
-            ))}
+                        <ul>
+                            {stack.tech.map((tech) => (
+                                <Tag key={tech} tech={tech} />
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
         </section>
     );
 };

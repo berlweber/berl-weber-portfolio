@@ -13,10 +13,10 @@ const App = () => {
       <Header />
       <main className='main'>
         <Hero />
-        <div className='about-skills-layout'> 
-          <About />
-          <TechStack />
-        </div>
+         
+        <About />
+        <TechStack />
+
         <Projects />
         <Contact />
       </main>
