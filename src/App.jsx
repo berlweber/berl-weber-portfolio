@@ -13,10 +13,8 @@ const App = () => {
       <Header />
       <main className='main'>
         <Hero />
-         
         <About />
         <TechStack />
-
         <Projects />
         <Contact />
       </main>

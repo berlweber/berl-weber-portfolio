@@ -12,7 +12,7 @@ const Projects = () => {
             featured: true,
             tech: ['Python', 'Django', 'PostgreSQL'],
             github: 'https://github.com/berlweber/tutor-track',
-            siteLink: 'https://tutor-track-9c7f1aa7eb60.herokuapp.com/'
+            siteLink: 'https://tutor-track-demo-fe7315d541fe.herokuapp.com/'
         },
         {
             screenshot: tryout,
@@ -30,7 +30,7 @@ const Projects = () => {
             description: "A project-planning app for organizing user stories, routes, ERDs, and pseudocode before development. Includes authentication and full CRUD workflows for managing project planning details.",
             tech: ['Node.js', 'Express', 'MongoDB'],
             github: 'https://github.com/berlweber/code-blueprint',
-            siteLink: 'https://tutor-track-9c7f1aa7eb60.herokuapp.com/'
+            siteLink: 'https://code-blueprint-d0c3aefef581.herokuapp.com/'
         },
         {
             screenshot: tryout,
@@ -52,7 +52,7 @@ const Projects = () => {
             />
 
             ))}
-            {/* still need to add hebrew interface and sign in - see cluade chat - reducing repetition in about me section  */}
+            {/* still need to add hebrew interface and sign in - see claude chat - reducing repetition in about me section  */}
             {/* need to add to the tutorTrack card an explanation of all or part of the user experience / product decisions I made */}
         </section>
     )

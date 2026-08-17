@@ -44,7 +44,7 @@ const ProjectCard = (props) => {
                 </div>
                 }
                 
-                <a href="{project.siteLink}"
+                <a href={project.siteLink}
                     target='_blank'
                     rel='noreferrer'
                     className='live-demo'>
