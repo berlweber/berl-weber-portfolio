@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css';
 
-const Navbar = ({ menuOpen, closeMenu }) => {
+const Navbar = ({ menuOpen, toggleMenu }) => {
     const [activeLink, setActiveLink] = useState('#home');
 
     const handleClick = (event) => {
         setActiveLink(event.currentTarget.getAttribute("href"));
-        closeMenu();
+        if (menuOpen) toggleMenu();
     };
 
     useEffect(() => {

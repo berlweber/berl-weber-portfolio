@@ -20,7 +20,7 @@ const Header = () => {
                 <span className='code-symbol'>&lt;/&gt;</span>
                 <span className='logo-name'>Berl Weber</span>
             </a>
-            <Navbar menuOpen={menuOpen} closeMenu={handleClick} />
+            <Navbar menuOpen={menuOpen} toggleMenu={handleClick} />
 
             <div className='header-actions'>
                 <a href="https://github.com/berlweber" 
