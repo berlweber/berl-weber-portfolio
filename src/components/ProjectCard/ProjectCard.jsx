@@ -21,6 +21,9 @@ const ProjectCard = (props) => {
                     <Tag key={tech} tech={tech} />
                 ))}
             </ul>
+            {project.demoNote && (
+                <p className='demo-note'>{project.demoNote}</p>
+            )} 
             <div className='project-links'>
                 {project.github ? 
                 <a href={project.github} 
@@ -51,6 +54,11 @@ const ProjectCard = (props) => {
                     Live Demo 
                     <ExternalLink size={16} />
                 </a>
+                {project.caseStudyLink && (
+                    <a href={project.caseStudyLink}>
+                        {project.caseStudyLabel} 
+                    </a>
+                )}
             </div>
         </article>
     );

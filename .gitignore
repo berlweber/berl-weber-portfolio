@@ -12,6 +12,7 @@ package-lock.json
 dist
 dist-ssr
 *.local
+pre_launch_checklist.md
 
 # Editor directories and files
 .vscode/*

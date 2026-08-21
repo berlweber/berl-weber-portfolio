@@ -2,6 +2,7 @@ import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import { ExternalLink } from 'lucide-react';
 import tryout from '../../assets/react.svg';
+import CaseStudy from '../CaseStudy/CaseStudy.jsx';
 
 const Projects = () => {
     const data = [
@@ -9,10 +10,13 @@ const Projects = () => {
             screenshot: tryout,
             name: 'TutorTrack',
             description: "A tutoring management platform used in a Yeshiva to manage students, assignments, sessions, billing, absences, monthly reports, and role-based permissions.",
+            demoNote: "Hebrew interface - built for a Hebrew-speaking Yeshiva. Demo credentials provided on the sign-in page.",
             featured: true,
             tech: ['Python', 'Django', 'PostgreSQL'],
             github: 'https://github.com/berlweber/tutor-track',
-            siteLink: 'https://tutor-track-demo-fe7315d541fe.herokuapp.com/'
+            siteLink: 'https://tutor-track-demo-fe7315d541fe.herokuapp.com/',
+            caseStudyLink: '#tutorTrackCaseStudy',
+            caseStudyLabel: 'Product Decisions →',
         },
         {
             screenshot: tryout,
@@ -43,17 +47,19 @@ const Projects = () => {
     ]
     return (
         <section id='projects' className='projects'>
-            <h2>Projects</h2>
-            <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
-            <br />
+            <div className='projects-header'>
+                <h2>Projects</h2>
+                <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
+            </div>
+            <div className='projects-grid'>
             {data.map((project) =>(
             <ProjectCard 
             key={project.name} project={project}
             />
-
             ))}
-            {/* still need to add hebrew interface and sign in - see claude chat - reducing repetition in about me section  */}
-            {/* need to add to the tutorTrack card an explanation of all or part of the user experience / product decisions I made */}
+            </div>
+            <CaseStudy />
+            {/* look in pre launch checklist in this repo before launching  */}
         </section>
     )
 }

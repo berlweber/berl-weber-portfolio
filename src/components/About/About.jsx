@@ -33,8 +33,8 @@ const About = () => {
                     <p>I think beyond whether the code works to whether the product serves its purpose for 
                         the people using it. In TutorTrack, I made valuable comments optional so the
                          extra effort wouldn’t discourage session logging, while requiring deliberate
-                          date entry to reduce inaccurate records.</p>
-                          {/* will add a link something like "See the thinking behind TutorTrack →" */}
+                          date entry with no default value, to reduce inaccurate records.</p>
+                          <a href="#tutorTrackCaseStudy">See the thinking behind TutorTrack →</a>
                 </div>
                 <div className='sub-sec'>
                     <span className='strength-card-symbol'><BookOpen size={40}/></span>
