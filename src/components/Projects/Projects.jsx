@@ -2,15 +2,15 @@ import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import { ExternalLink } from 'lucide-react';
 import tryout from '../../assets/react.svg';
-import CaseStudy from '../CaseStudy/CaseStudy.jsx';
+import TutorTrackCaseStudy from '../TutorTrackCaseStudy/TutorTrackCaseStudy.jsx';
 
 const Projects = () => {
     const data = [
         {
             screenshot: tryout,
             name: 'TutorTrack',
-            description: "A tutoring management platform used in a Yeshiva to manage students, assignments, sessions, billing, absences, monthly reports, and role-based permissions.",
-            demoNote: "Hebrew interface - built for a Hebrew-speaking Yeshiva. Demo credentials provided on the sign-in page.",
+            description: "A tutoring management platform used by the Hebrew-speaking staff at a Yeshiva (Jewish school) to manage students, assignments, sessions, billing, absences, monthly reports, and role-based permissions.",
+            demoNote: "Hebrew interface · Demo credentials on sign-in page",
             featured: true,
             tech: ['Python', 'Django', 'PostgreSQL'],
             github: 'https://github.com/berlweber/tutor-track',
@@ -52,13 +52,13 @@ const Projects = () => {
                 <a href="http://github.com/berlweber" target='_blank' rel='noreferrer' className='github-general'>View all on GitHub <ExternalLink size={16} /> </a>
             </div>
             <div className='projects-grid'>
-            {data.map((project) =>(
-            <ProjectCard 
-            key={project.name} project={project}
-            />
-            ))}
+                {data.map((project) =>(
+                <ProjectCard
+                key={project.name} project={project}
+                />
+                ))}
             </div>
-            <CaseStudy />
+            <TutorTrackCaseStudy />
             {/* look in pre launch checklist in this repo before launching  */}
         </section>
     )
