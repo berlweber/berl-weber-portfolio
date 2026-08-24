@@ -1,3 +1,21 @@
-/* .projects {
-    
-} */
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 0px;
+    margin-block: 1rem;
+}
+
+.projects-header h2 {
+    margin: 0;
+}
+
+.projects-header a {
+    color: var(--accent-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+

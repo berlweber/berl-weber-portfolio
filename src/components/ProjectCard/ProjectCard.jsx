@@ -7,14 +7,14 @@ const ProjectCard = (props) => {
     const project = props.project;
 
     return (
-        <article className='project-card'>
+        <article className={'project-card ' + ( project.featured ? 'tutortrack' : undefined )}>
             {project.featured && (
                 <span className='project-badge'>Featured Project</span>
             )}
             {project.group && (
                 <span className='project-badge'>Group Project</span>
             )}
-            <img src={project.screenshot} alt="screenshot of deployed project" />
+            <img src={project.screenshot} alt="screenshot of deployed project" className='project-screenshot'/>
             <div className='project-card-content'>
                 <h3>{project.name}</h3>
                 <p className='project-description'>{project.description}</p>
@@ -30,21 +30,21 @@ const ProjectCard = (props) => {
                     {project.github ?
                     <a href={project.github}
                         target='_blank' rel="noreferrer" className='project-repo'>
-                        <FaGithub />
+                        <FaGithub size={20} className='github-smbl'/>
                         GitHub
                     </a> :
                     <div className='repo-links'>
                         <a href={project.githubFrontend}
                             target='_blank' rel="noreferrer" className='project-repo'>
-                            <FaGithub />
-                            Frontend Repo
+                            <FaGithub size={20} className='github-smbl'/>
+                            Frontend
                         </a>
                         <a href={project.githubBackend}
                             target='_blank'
                             rel="noreferrer"
                             className='project-repo'>
-                            <FaGithub />
-                            Backend Repo
+                            <FaGithub size={20} className='github-smbl' />
+                            Backend
                         </a>
                     </div>
                     }

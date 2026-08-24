@@ -1,3 +1,72 @@
-/* .project-card {
-   
+.project-card {
+    position: relative;
+    background-color: var(--bg-card);
+    border: 1px var(--border-primary) solid;
+    border-radius: 15px;
+    padding: 1rem;
+    z-index: -1;
+}
+
+/* .tutortrack {
+possibly need to make it wider than other cards..
 } */
+
+.project-screenshot {
+    width: 100%;
+    height: auto;
+}
+
+.project-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--accent-soft);
+    padding: 5px 15px;
+    border-radius: 15px 0;
+}
+
+.project-tech-stack {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 0;
+    flex-wrap: wrap;
+    column-gap: 0.7rem;
+    row-gap: 0.8rem;
+}
+
+.project-tech-stack li {
+    padding: 6px 9px;
+    border-radius: 5px;
+    border: var(--border-primary) solid 2px;
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    color: var(--accent-primary);
+
+}
+
+.repo-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-links a, .repo-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2px;
+    border: red solid 1px;
+}
+
+.github-smbl {
+    color: var(--text-muted);
+}
