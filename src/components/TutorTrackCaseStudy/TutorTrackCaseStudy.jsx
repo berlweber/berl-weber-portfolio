@@ -15,7 +15,7 @@ const TutorTrackCaseStudy = () => {
                         <p>Written comments were valuable, but requiring them could discourage
                             tutors from logging sessions, so I kept them optional. For dates,
                             I removed the “today” default and made selecting a date required,
-                            because sessions might be entered days later—aconcern that actual 
+                            because sessions might be entered days later—a concern that actual
                             use later confirmed.</p>
                     </div>
                 </div>
