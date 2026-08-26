@@ -1,7 +1,7 @@
 .project-card {
     position: relative;
     background-color: var(--bg-card);
-    border: 1px var(--border-primary) solid;
+    border: 1px var(--border-secondary) solid;
     border-radius: 15px;
     padding: 1rem;
     display: flex;
@@ -39,11 +39,12 @@
 .case-study-link {
     margin-left: auto;
     margin-top: 0.85rem;
-    color: var(--accent-soft);
+    transition: transform 0.2s ease;
 }
 
 .case-study-link:hover {
-    color: var(--accent-hover);
+    color: var(--text-secondary);
+    transform: scale(1.05);
 }
 
 .project-tech-stack {
