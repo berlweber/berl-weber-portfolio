@@ -4,16 +4,14 @@
     border: 1px var(--border-primary) solid;
     border-radius: 15px;
     padding: 1rem;
-    z-index: -1;
+    display: flex;
+    flex-direction: column;
 }
-
-/* .tutortrack {
-possibly need to make it wider than other cards..
-} */
 
 .project-screenshot {
     width: 100%;
     height: auto;
+    flex: 0 0 auto;
 }
 
 .project-badge {
@@ -21,8 +19,31 @@ possibly need to make it wider than other cards..
     top: 0;
     left: 0;
     background-color: var(--accent-soft);
-    padding: 5px 15px;
+    padding: 4px 12px;
     border-radius: 15px 0;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+
+.project-description {
+    margin-block: 0;
+}
+
+.case-study-link {
+    margin-left: auto;
+    margin-top: 0.85rem;
+    color: var(--accent-soft);
+}
+
+.case-study-link:hover {
+    color: var(--accent-hover);
 }
 
 .project-tech-stack {
@@ -34,6 +55,7 @@ possibly need to make it wider than other cards..
     flex-wrap: wrap;
     column-gap: 0.7rem;
     row-gap: 0.8rem;
+    margin-bottom: auto;
 }
 
 .project-tech-stack li {
@@ -44,13 +66,22 @@ possibly need to make it wider than other cards..
     background-color: var(--bg-primary);
 }
 
+.demo-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+
+
 .project-links {
     display: flex;
     justify-content: space-between;
+    align-items: start;
     flex-wrap: wrap;
     row-gap: 0.5rem;
     color: var(--accent-primary);
-
+    margin-top: auto;
 }
 
 .repo-links {
@@ -63,10 +94,18 @@ possibly need to make it wider than other cards..
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.2px;
-    border: red solid 1px;
+    gap: 0.5rem;
+}
+
+.project-links a:hover, .repo-links a:hover {
+    color: var(--accent-hover);
 }
 
 .github-smbl {
     color: var(--text-muted);
+}
+
+.live-demo {
+    margin-top: auto;
+    margin-left: auto;
 }

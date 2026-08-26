@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
     const project = props.project;
 
     return (
-        <article className={'project-card ' + ( project.featured ? 'tutortrack' : undefined )}>
+        <article className={ project.featured ? 'project-card tutortrack' : 'project-card' }>
             {project.featured && (
                 <span className='project-badge'>Featured Project</span>
             )}
@@ -18,6 +18,11 @@ const ProjectCard = (props) => {
             <div className='project-card-content'>
                 <h3>{project.name}</h3>
                 <p className='project-description'>{project.description}</p>
+                {project.caseStudyLink && (
+                    <a className='case-study-link' href={project.caseStudyLink}>
+                        {project.caseStudyLabel}
+                    </a>
+                )}
                 <ul className='project-tech-stack'>
                     {project.tech.map((tech) => (
                         <Tag key={tech} tech={tech} />
@@ -55,11 +60,6 @@ const ProjectCard = (props) => {
                         Live Demo
                         <ExternalLink size={16} />
                     </a>
-                    {project.caseStudyLink && (
-                        <a className='case-study-link' href={project.caseStudyLink}>
-                            {project.caseStudyLabel}
-                        </a>
-                    )}
                 </div>
             </div>
         </article>
