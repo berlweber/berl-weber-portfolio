@@ -12,6 +12,7 @@ header {
     background-color: var(--bg-primary);
     background-color: rgb(5, 8, 22, 0.85);
     border-bottom: 2px var(--border-primary) solid;
+    z-index: 1;
 }
 
 #logo-name-link {
