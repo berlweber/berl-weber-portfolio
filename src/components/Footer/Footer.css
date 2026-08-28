@@ -1,0 +1,6 @@
+footer p {
+    text-align: center;
+    font-size: small;
+    color: var(--text-muted);
+    margin-block: 1.3rem;
+}
