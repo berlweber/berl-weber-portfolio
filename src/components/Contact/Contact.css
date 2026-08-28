@@ -1,6 +1,6 @@
 .contact {
     display: flex;
-    margin-block: 3rem;
+    margin-top: 3rem;
     background-color: var(--bg-card);
     border-radius: 12px;
     border: var(--border-secondary) solid 1px;
