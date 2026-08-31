@@ -33,8 +33,8 @@
     color: var(--text-muted);
 }
 
-.contact-form  input, .contact-form textarea {
-    padding: 0.5rem;
+.contact-form input, .contact-form textarea  {
+    padding: 0.5rem 0.7rem;
     line-height: 1.5;
     font-size: 1rem;
     background-color: var(--input-bg);
@@ -46,6 +46,15 @@
         "Segoe UI",
         sans-serif;
     margin-top: 0.5rem;
+}
+
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover, 
+.contact-form input:-webkit-autofill:focus, 
+.contact-form input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px var(--input-bg) inset !important;
+    -webkit-text-fill-color: var(--text-secondary) !important;
+    caret-color: var(--text-secondary);
 }
 
 .name-and-email {
