@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
             {project.group && (
                 <span className='project-badge'>Group Project</span>
             )}
-            <img src={project.screenshot} alt="screenshot of deployed project" className='project-screenshot'/>
+            <img src={project.screenshot} alt={`${project.name} project screenshot`} className='project-screenshot'/>
             <div className='project-card-content'>
                 <h3>{project.name}</h3>
                 <p className='project-description'>{project.description}</p>

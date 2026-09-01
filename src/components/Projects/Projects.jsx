@@ -1,13 +1,16 @@
 import './Projects.css';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import { ExternalLink } from 'lucide-react';
-import tryout from '../../assets/react.svg';
+import tutorTrackScreenshot from '../../assets/projects/tutorTrack screenshot.webp';
+import reflectlyScreenshot from '../../assets/projects/reflectly Screenshot.webp';
+import codeBlueprintScreenshot from '../../assets/projects/code-blueprint Screenshot.webp';
+import snakeGameScreenshot from '../../assets/projects/snake-game screenshot.webp';
 import TutorTrackCaseStudy from '../TutorTrackCaseStudy/TutorTrackCaseStudy.jsx';
 
 const Projects = () => {
     const data = [
         {
-            screenshot: tryout,
+            screenshot: tutorTrackScreenshot,
             name: 'TutorTrack',
             description: "A tutoring management platform used by the Hebrew-speaking staff at a Yeshiva (Jewish school) to manage students, assignments, sessions, billing, absences, monthly reports, and role-based permissions.",
             demoNote: "Hebrew interface · Demo credentials on sign-in page",
@@ -19,7 +22,7 @@ const Projects = () => {
             caseStudyLabel: 'Product Decisions →',
         },
         {
-            screenshot: tryout,
+            screenshot: reflectlyScreenshot,
             name: 'Reflectly',
             description: "A MERN mood-tracking app with reflection logs and community features. I focused on backend setup, authentication, API structure, and debugging.",
             group: true,
@@ -29,7 +32,7 @@ const Projects = () => {
             siteLink: 'https://reflectly-moods.netlify.app/'
         },
         {
-            screenshot: tryout,
+            screenshot: codeBlueprintScreenshot,
             name: 'CodeBlueprint',
             description: "A project-planning app for organizing user stories, routes, ERDs, and pseudocode before development. Includes authentication and full CRUD workflows for managing project planning details.",
             tech: ['Node.js', 'Express', 'MongoDB'],
@@ -37,7 +40,7 @@ const Projects = () => {
             siteLink: 'https://code-blueprint-d0c3aefef581.herokuapp.com/'
         },
         {
-            screenshot: tryout,
+            screenshot: snakeGameScreenshot,
             name: 'Snake Game',
             description: "A browser-based game focused on JavaScript logic, DOM manipulation, keyboard controls, event handling, collision detection, and real-time game-state updates.",
             tech: ['JavaScript', 'HTML', 'CSS'],
